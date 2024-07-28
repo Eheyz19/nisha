@@ -31,6 +31,6 @@ async function searchWord() {
         }
     } catch (error) {
         console.error('Error fetching the words:', error);
-        resultDiv.innerHTML = '<p class="error">Sorry, there was an error processing your request.</p>';
+        resultDiv.innerHTML = '<h3 class="error">Sonuç bulunamadı</h3>';
     }
 }

@@ -1,45 +1,100 @@
-body {
-    background-color: #fff;
-    color: #000;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ae9cff;
 }
 
 .container {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
+    background-color: #ffffff;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.29);
 }
 
-input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 2px solid #008000;
-    border-radius: 5px;
-    background-color: #90EE90; /* Light green background */
-    color: #000;
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-button {
-    padding: 10px 20px;
+.search-box input {
+    padding: 5px;
+    width: 70%;
     border: none;
+    outline: none;
+    border-bottom: 3px solid #ae9cff;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 5px 0;
+    width: 25%;
+    background-color: #a08aff;
+    border: none;
+    outline: none;
+    color: #ffffff;
     border-radius: 5px;
-    background-color: #008000; /* Green background */
-    color: #fff;
-    cursor: pointer;
+    font-size: 16px;
+    transition: 0.4s;
 }
 
-button:hover {
-    background-color: #006400; /* Darker green */
+.search-box button:hover {
+    background-color: #866aff;
+    color: #ffffff;
 }
 
-#result {
-    margin-top: 20px;
+.result {
+    position: relative;
+}
+
+.result h3 {
+    font-size: 30px;
+    color: #1f194c;
+}
+
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.result button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+
+.word-meaning {
+    color: #575a7b;
+}
+
+.word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #ae9cff;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.error {
+    margin-top: 80px;
+    text-align: center;
 }

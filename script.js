@@ -18,13 +18,13 @@ async function searchWord() {
             const wordDetails = words[query];
             resultDiv.innerHTML = `
                 <div class="word">
-                    <h3>Aratılan Kelime: ${query}</h3>
+                    <h3>${query}</h3>
                 </div>
                 <div class="details">
-                    <p>Kelime Türü: ${wordDetails.type}</p>
+                    <p>${wordDetails.type}</p>
                 </div>
-                <p class="description">Açıklama: ${wordDetails.description}</p>
-                <p class="quote">Alıntı: ${wordDetails.quote}</p>
+                <p class="description">${wordDetails.description}</p>
+                <p class="quote">${wordDetails.quote}</p>
             `;
         } else {
             resultDiv.innerHTML = '<p class="error">Word not found.</p>';

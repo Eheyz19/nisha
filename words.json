@@ -1,0 +1,26 @@
+{
+    "mak": {
+        "synonyms": ["mak", "+mak", "mAk", "mAK", "MAK", "makin"],
+        "type": "verb",
+        "description": "Bir eylemi belirtmek için kullanýlan ek.",
+        "quote": "Yazmak, okumak gibi fiillerde kullanýlýr."
+    },
+    "merhaba": {
+        "synonyms": ["merhaba", "selam", "hello", "hi"],
+        "type": "noun",
+        "description": "Biriyle karþýlaþýnca söylenebilecek söz.",
+        "quote": "Merhaba ilk 1600 yýlýnda kullanýlmýþtýr."
+    },
+    "example": {
+        "synonyms": ["example"],
+        "type": "noun",
+        "description": "a thing characteristic of its kind or illustrating a general rule.",
+        "quote": "Example usage can help in understanding."
+    },
+    "dictionary": {
+        "synonyms": ["dictionary"],
+        "type": "noun",
+        "description": "a reference book containing an alphabetical list of words, with information about their meanings, pronunciations, and etymologies.",
+        "quote": "A dictionary is essential for learning a language."
+    }
+}

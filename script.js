@@ -6,7 +6,7 @@ async function searchWord() {
     resultDiv.innerHTML = ''; // Clear previous result
 
     if (query === '') {
-        resultDiv.innerHTML = '<p class="error">Please enter a word.</p>';
+        resultDiv.innerHTML = '<h3 class="error">Lütfen bir kelime giriniz. </h3>';
         return;
     }
     

@@ -1,38 +1,24 @@
-const url ="https://api.dictionaryapi.dev/api/v2/entries/en/";
-const result = document.getElementById("result");
-const sound = document.getElementById("sound");
-const btn = document.getElementById("search-btn");
-
-btn.addEventListener("click", () => {
-    let inpWord = document.getElementById("inp-word").value;
-    fetch(`${url}${inpWord}`).then((response) => response.json()).then((data) => {
-        console.log(data);
-        result.innerHTML = `
-        <div class="word">
-                <h3>${inpWord}</h3>
-                <button onclick="playSound()">
-                    <i class="fa fa-volume-up" style="color: #ac99ff;"></i>
-                </button>
-            </div>
-            <div class="details">
-                <p>${data[0].meanings[0].partOfSpeech}</p>
-                <p> . ${data[0].phonetic}</p>
-            </div>
-            <p class="word-meaning">
-                ${data[0].meanings[0].definitions[0].definition}
-            </p>
-            <p class="word-example">
-                ${data[0].meanings[0].definitions[0].example || ""}
-            </p>`;
-            sound.setAttribute("src", `https:${data[0].phonetics[0].audio}`);
-            
-    })
-
-    .catch(() => {
-        result.innerHTML = `<h3 class="error">Couldn't Find The Word</h3>`;
-    });
-});
-
-function playSound(){
-    sound.play();
+async function searchWord() {
+    const searchBox = document.getElementById('searchBox');
+    const query = searchBox.value.trim().toLowerCase();
+    const resultDiv = document.getElementById('result');
+    
+    if (query === '') {
+        resultDiv.innerHTML = '<p>Please enter a word.</p>';
+        return;
+    }
+    
+    try {
+        const response = await fetch('words.json');
+        const words = await response.json();
+        
+        if (words[query]) {
+            resultDiv.innerHTML = `<p><strong>${query}:</strong> ${words[query]}</p>`;
+        } else {
+            resultDiv.innerHTML = '<p>Word not found.</p>';
+        }
+    } catch (error) {
+        console.error('Error fetching the words:', error);
+        resultDiv.innerHTML = '<p>Sorry, there was an error processing your request.</p>';
+    }
 }

@@ -15,14 +15,16 @@ async function searchWord() {
         const words = await response.json();
         
         if (words[query]) {
+            const wordDetails = words[query];
             resultDiv.innerHTML = `
                 <div class="word">
-                    <h3>${query}</h3>
+                    <h3>Aratılan Kelime: ${query}</h3>
                 </div>
                 <div class="details">
-                    <p>Meaning:</p>
+                    <p>Kelime Türü: ${wordDetails.type}</p>
                 </div>
-                <p class="word-meaning">${words[query]}</p>
+                <p class="description">Açıklama: ${wordDetails.description}</p>
+                <p class="quote">Alıntı: ${wordDetails.quote}</p>
             `;
         } else {
             resultDiv.innerHTML = '<p class="error">Word not found.</p>';

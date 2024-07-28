@@ -10,8 +10,8 @@
         "quote": "A dictionary is essential for learning a language."
     },
     "dark": {
-        "type": "noun",
-        "description": "ananin ami otopark",
-        "quote": "Dark places can be scary."
+        "noun",
+        "ananin ami otopark",
+        "Dark places can be scary."
     }
 }

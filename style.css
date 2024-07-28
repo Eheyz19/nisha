@@ -63,38 +63,27 @@ body {
 }
 
 .result .word {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
-}
-
-.result button {
-    background-color: transparent;
-    border: none;
-    font-size: 18px;
+    margin-top: 40px;
 }
 
 .result .details {
-    display: flex;
-    gap: 10px;
     color: #b3b6d4;
     margin: 5px 0 20px 0;
     font-size: 14px;
 }
 
-.word-meaning {
+.result .description, .result .quote {
     color: #575a7b;
+    margin-top: 10px;
 }
 
-.word-example {
-    color: #575a7b;
+.result .quote {
     font-style: italic;
     border-left: 5px solid #ae9cff;
     padding-left: 20px;
-    margin-top: 30px;
 }
 
 .error {
-    margin-top: 80px;
+    margin-top: 40px;
     text-align: center;
 }

@@ -27,7 +27,7 @@ async function searchWord() {
                 <p class="quote">${wordDetails.quote}</p>
             `;
         } else {
-            resultDiv.innerHTML = '<p class="error">Word not found.</p>';
+            resultDiv.innerHTML = '<h3 class="error">Sonuç bulunamadı</h3>';
         }
     } catch (error) {
         console.error('Error fetching the words:', error);

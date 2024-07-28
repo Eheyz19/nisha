@@ -1,0 +1,27 @@
+{
+    "mak": {
+        "type": "verb",
+        "description": "Bir eylemi belirtmek için kullanýlan ek.",
+        "quote": "Yazmak, okumak gibi fiillerde kullanýlýr."
+    },
+    "+mak": {
+        "type": "verb",
+        "description": "Bir eylemi belirtmek için kullanýlan ek.",
+        "quote": "Yazmak, okumak gibi fiillerde kullanýlýr."
+    },
+    "example": {
+        "type": "noun",
+        "description": "a thing characteristic of its kind or illustrating a general rule.",
+        "quote": "Example usage can help in understanding."
+    },
+    "dictionary": {
+        "type": "noun",
+        "description": "a reference book containing an alphabetical list of words, with information about their meanings, pronunciations, and etymologies.",
+        "quote": "A dictionary is essential for learning a language."
+    },
+    "dark": {
+        "type": "noun",
+        "description": "ananin ami otopark",
+        "quote": "Dark places can be scary."
+    }
+}
